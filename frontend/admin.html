@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <div id="create-exam">
+            <h2>Create Exam</h2>
+            <input type="text" id="exam-title" placeholder="Exam Title">
+            <input type="number" id="exam-duration" placeholder="Duration (minutes)">
+            <div id="questions-input"></div>
+            <button onclick="addQuestion()">Add Question</button>
+            <button onclick="createExam()">Create Exam</button>
+        </div>
+        <div id="exams-list"></div>
+        <div id="results-list"></div>
+        <div id="logs-list"></div>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
